@@ -1,0 +1,107 @@
+<!20180417 html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>html form(表单)</title>
+  <link rel="shoutcut icon" href="favoricon.icon"type="image/x-icon">
+  <style>
+    input[type=text],input[type=password],input[type=number],select{
+      width:100%;
+      padding: 12px 20px;/*内边距*/
+      margin: 8px 0;/**/
+      display:inline-block;
+      border: 1px solid#ccc;
+      border-radius:4px;
+      box-sizing:border-box;}
+      button[type=submit]{
+      width:100%;
+      padding:12px 0 12px;
+      background-color: #4cb050;
+      color:#ffffff;
+    }
+    button[type=reset]{
+      width:100%;
+      padding:12px 0 12px;
+      background-color: #abff30;
+      color:#ffffff;
+    }
+    
+  
+  </style>
+
+
+
+</head>
+
+<body>
+  <div>
+    <!--
+    form表单元素（节点|标签）
+     action属性：提交到服务器的路径（http:www.google.com）#本页提交 
+     method属性：提交方式post|get 
+     name属性：给控件（表单控件）取别名 
+     id属性：设置控件的唯一id名
+  -->
+    <form action="#" method="POST" name="f" id="f">
+      <!--标签元素titile：提示作用-->
+      <label for="username" title=用户名>Username:</label>
+      <!--文本框
+      type：设置控件的类型是文本框
+    name：文本框的名
+  placeholder：文本框的占位字符（当输入时自动隐藏，有提示作用）
+size：文本框的长度 默认是：20
+maxlength：最大输入字符长度
+value：文本框的值
+       -->
+       <input type="text"name="Username:"placeholder="Your name...."size="20"maxlength="10">
+       <input type="text"name="lastname"placeholder=""value="Tom"><br>
+       <label for="password">Password：</label>
+       <!--密码框：type="password"设置密码框，输入的文本不显示，用点|星号代替-->
+       <input type="password"name="password"placeholder="请输入密码">
+       <label for="birthdate">Birthdate：</label>
+       <!--type="date"日期：年月日type="datetime-local"日期年月日时分-->
+       <input type="date"name="birthdate">
+       <input type="datetime-local"name="productDate"><br>
+       <label for="gender">Gender：</label>
+       <!--type="radio"单选按钮 一组单选按钮，名必须一致 值：male：M m 1 famale：f f 0-->
+       <input type="radio"name="gender"value="male">Male
+       <input type="radio"name="gender"value="famale"checked>Famale<br>
+       <label for="hobby">Hobby：</label>
+       <!--多选框name名必须一致checked默认选中-->
+       <input type="checkbox"name="hobby"value="playgame">Play Game
+       <input type="checkbox"name="hobby"value="read">Read
+       <input type="checkbox"name="hobby"value="movie">Movie
+       <input type="checkbox"name="hobby"value="sport">Sport<br>
+       <label for="age">Age：</label>
+       <!--type="number"数字框：step步长，默认是1-->
+       <input type="number"name="age"placeholder="Your age....">
+       <input type="number"name="salary"step="0.01"placeholder="Your salary...."><br>
+       <label for="city">City：</label>
+       <!--下拉列表框：seledted默认选中-->
+       <select name="city">
+         <option value="-1">请选择</option>
+         <option value="1">大长沙</option>
+         <option value="2"selected>Changsha</option>
+         <option value="3">纽约</option>
+       </select><br>
+       <label for="remake">Remark:</label>
+       <!--多行文本框-->
+       <textarea name="remark"  cols="20" rows="3"></textarea><br>
+       <!--提交按钮-->
+       <button type="submit">注册</button><br>
+       <!--重置按钮-->
+       <button type="reset">重置</button><br>
+       <button type="button">我是按钮</button>
+       <button type="button"value="Click Me...">click me</button><br>
+
+
+    </form>
+  </div>
+
+  </form>
+</body>
+
+</html>

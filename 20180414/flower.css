@@ -1,0 +1,38 @@
+@charset"UTF-8";
+
+body{
+  font-size: 14px;
+  background-color:#ffe5e5;;
+  
+  font-family: "微软雅黑";
+}
+
+h1{
+  text-align: center;
+  font-size: 42px;
+  font-family: "宋体";
+color:#9d3151;
+}
+#link1 {
+  text-align:center
+}
+
+#link1 a{
+color: #de4eaf;
+text-decoration: none;
+margin-right: 15px;
+}
+
+#bg {
+  background-color: #b3375c;
+  padding: 10px;
+}
+#bg img
+{
+  float:left;
+margin:10px;}
+ul li{font: size 14px;}
+.p1{ color:#cccc00;
+  font-style :oblique;
+  text-decoration:underline;/*装饰下划线*/
+}
